@@ -4,7 +4,7 @@ $main-color: #ffbc00;
 $light-color: #f4f4f4;
 $mdium-color: #ccc;
 $dark-color: #333;
-$bg-image: url('../img/showcase.jpg');
+$bg-image: url('../img/laptop.jpg');
 
 *{
     margin: 0;
@@ -15,6 +15,8 @@ body{
    font-family: 'Dosis', sans-serif;
    line-height: 1.6;
    background: #fff;
+   
+   
 }
 
 a {
@@ -38,8 +40,13 @@ img {
 #logo{
     width: 70px;
     height: 70px;
-    color: #fff;
+    color: #81667A;
     text-transform: uppercase;
+    font-family: 'Great Vibes', cursive;
+    
+}
+#logo-2{
+    color:#92B4A7;
 }
 //Main Nav
 #main-nav {
@@ -79,7 +86,15 @@ img {
         background: $bg-image no-repeat center right/cover;
         height: 100vh;
         color: #fff;
+
+        // Header content
+        .header-content {
+            text-aling: center;
+            padding-top: 20%;
+        }
     }
+
+    // Header inner
     &-inner{
 
     }
@@ -91,4 +106,45 @@ img {
     padding: 0 1.5rem;
     margin: auto;
     overflow: hidden;
+}
+
+// Buttons
+%btn-shared {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    &-main {
+        @extend %btn-shared;
+        color: #333;
+        background-color: $main-color;
+    }
+    &-light {
+        @extend %btn-shared;
+        color: #333;
+        background-color: $light-color;
+    }
+    &-dark {
+        @extend %btn-shared;
+        color: #f4f4f4;
+        background-color: $dark-color;
+    }
+
+}
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn']:hover {
+    background-color: $main-color;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.text-center {
+    text-align: center;
 }
