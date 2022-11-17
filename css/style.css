@@ -70,8 +70,12 @@ img {
   color: #fff;
 }
 #header-home .header-content {
-  text-aling: center;
+  text-align: center;
   padding-top: 20%;
+}
+#header-home .header-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
 }
 .container {
   max-width: 1280px;

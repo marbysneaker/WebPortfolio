@@ -83,15 +83,22 @@ img {
 
 #header {
     &-home{
-        background: $bg-image no-repeat center right/cover;
+        background: $bg-image no-repeat center right / cover;
         height: 100vh;
         color: #fff;
 
-        // Header content
+        //Header content
         .header-content {
-            text-aling: center;
+            text-align: center;
             padding-top: 20%;
+
+            h1 {
+                font-size: 3rem;
+                line-height: 1.2;
+            }
         }
+
+
     }
 
     // Header inner
