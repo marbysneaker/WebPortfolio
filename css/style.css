@@ -81,7 +81,8 @@ img {
   margin-top: 3rem;
   display: grid;
   grid-gap: 1 rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
 }
 #home-a .specials .fas {
   color: #ffbc00;
@@ -109,6 +110,11 @@ img {
 }
 #home-b .stats div:nth-child(even) {
   background-color: #ccc;
+}
+
+#technology {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .container {
