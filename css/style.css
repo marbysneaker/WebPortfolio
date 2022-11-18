@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: "PT Serif", serif;
   line-height: 1.6;
   background: #fff;
 }
@@ -79,6 +79,13 @@ img {
   font-size: 3rem;
   line-height: 1.2;
 }
+#header-home .header-content .txt-type {
+  background: url(https://media.giphy.com/media/MyWrJJIdAfoJuEPlLP/giphy.gif);
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+}
 #home-a .specials {
   margin-top: 3rem;
   display: grid;
@@ -127,6 +134,7 @@ img {
 }
 
 .btn-dark, .btn-light, .btn-main {
+  border-radius: 8px 20px;
   display: inline-block;
   padding: 0.8rem 2rem;
   transition: all 0.5s;
