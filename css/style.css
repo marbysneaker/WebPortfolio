@@ -27,8 +27,8 @@ img {
 }
 
 #logo {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   color: #81667A;
   text-transform: uppercase;
   font-family: "Great Vibes", cursive;
@@ -51,7 +51,9 @@ img {
 }
 #main-nav a {
   text-decoration: none;
-  color: #fff;
+  font-weight: bold;
+  color: #f7ede2;
+  font-size: 1.5rem;
   text-transform: uppercase;
   border-bottom: 3px transparent solid;
   padding-bottom: 0.5 rem;
@@ -61,7 +63,7 @@ img {
   border-color: #ccc;
 }
 #main-nav a.current {
-  border-color: #ffbc00;
+  border-color: #ffc8dd;
 }
 
 #header-home {
@@ -85,7 +87,7 @@ img {
   list-style: none;
 }
 #home-a .specials .fas {
-  color: #ffbc00;
+  color: #a2d2ff;
   padding-bottom: 0.4rem;
 }
 #home-b .stats {
@@ -134,7 +136,7 @@ img {
 
 .btn-main {
   color: #333;
-  background-color: #ffbc00;
+  background-color: #ffc8dd;
 }
 .btn-light {
   color: #333;
@@ -148,7 +150,7 @@ img {
 button[class^=btn-]:hover,
 a[class^=btn-]:hover,
 input[class^=btn]:hover {
-  background-color: #ffbc00;
+  background-color: #ffc8dd;
 }
 
 .lead {
