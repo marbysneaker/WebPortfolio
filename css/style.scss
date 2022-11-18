@@ -7,6 +7,16 @@ $dark-color: #333;
 $bg-image: url('../img/laptop.jpg');
 $icon-img: #a2d2ff; 
 
+//Set Text Color
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -39,8 +49,7 @@ img {
 }
 // Logo
 #logo{
-    width: 100px;
-    height: 100px;
+    font-size: 40px;
     color: #81667A;
     text-transform: uppercase;
     font-family: 'Great Vibes', cursive;
@@ -87,6 +96,7 @@ img {
 #header {
     &-home{
         background: $bg-image no-repeat center right / cover;
+        opacity: 0.93;
         height: 100vh;
         color: #fff;
 
@@ -166,6 +176,58 @@ img {
         }
     
     }
+    &-c {
+        text-align: center;
+        .process {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 1.5rem;
+            
+            &-step {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size:28px;
+                background: $light-color;
+                color: set-text-color($light-color);
+                border-radius:50%;
+                height: 15px;
+                width: 15px;
+                line-height: 15px;
+                padding: 1rem;
+                transition: all 1s;
+
+            }
+            &-icon {
+                border-radius: 50%;
+                background: $dark-color;
+                color: set-text-color($dark-color);
+                padding: 2rem;
+                width: 70px;
+                height: 70px;
+                line-height:70px;
+                text-align: center;
+                position: relative;
+                transition: all 1s;
+
+                &:hover {
+                    background: $main-color;
+                    width: 90px;
+                    height: 90px;
+                    line-height: 90px;
+                    
+                    .process-step {
+                        background: $dark-color;
+                        color: set-text-color($dark-color)
+                    }
+                }
+
+
+            }
+        }
+    }
+
 }
 #technology {
     display: grid;
@@ -250,4 +312,49 @@ input[class^='btn']:hover {
     &-4 {
         margin: 4rem 0;
     }
+}
+
+.bottom-line {
+    height: 2px;
+    width: 3rem;
+    background-color: $main-color;
+    display:block;
+    margin:0 auto 1rem auto;
+}
+.section-title {
+    font-size: 2rem;
+    display: block;
+    padding-bottom: .5rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+// footer
+#main-footer {
+    background: $dark-color;
+    color:#fff;
+    height: 5rem;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        align-items: center;
+
+        .social .fab{
+            margin-right: 1rem;
+            border: 2px #fff solid;
+            border-radius: 50%;
+            height: 20px;
+            width:20px;
+            text-align: center;
+            padding: 0.5rem;
+
+            &:hover {
+                background: $main-color;
+
+            }
+        }
+    }
+
 }

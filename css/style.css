@@ -27,8 +27,7 @@ img {
 }
 
 #logo {
-  width: 100px;
-  height: 100px;
+  font-size: 40px;
   color: #81667A;
   text-transform: uppercase;
   font-family: "Great Vibes", cursive;
@@ -68,6 +67,7 @@ img {
 
 #header-home {
   background: url("../img/laptop.jpg") no-repeat center right/cover;
+  opacity: 0.93;
   height: 100vh;
   color: #fff;
 }
@@ -119,6 +119,51 @@ img {
 }
 #home-b .stats div:nth-child(even) {
   background-color: #ccc;
+}
+#home-c {
+  text-align: center;
+}
+#home-c .process {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+#home-c .process-step {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  background: #f4f4f4;
+  color: #000;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  padding: 1rem;
+  transition: all 1s;
+}
+#home-c .process-icon {
+  border-radius: 50%;
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  position: relative;
+  transition: all 1s;
+}
+#home-c .process-icon:hover {
+  background: #ffc8dd;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+}
+#home-c .process-icon:hover .process-step {
+  background: #333;
+  color: #fff;
 }
 
 #technology {
@@ -194,4 +239,44 @@ input[class^=btn]:hover {
 }
 .my-4 {
   margin: 4rem 0;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background-color: #ffc8dd;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+}
+
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem;
+}
+#main-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+#main-footer .footer-content .social .fab {
+  margin-right: 1rem;
+  border: 2px #fff solid;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  padding: 0.5rem;
+}
+#main-footer .footer-content .social .fab:hover {
+  background: #ffc8dd;
 }/*# sourceMappingURL=style.css.map */
