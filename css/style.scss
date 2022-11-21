@@ -394,6 +394,38 @@ input[class^='btn']:hover {
             color: #00f5d4;
         }
     }
+    &-b {
+        .progress {
+            overflow: hidden;
+            height: 20px;
+            background: $mdium-color;
+            border-radius: 5px;
+            margin-bottom: .3rem;
+            div {
+                height: 100%;
+                color: #fff;
+                text-align: center;
+                background: #00f5d4;
+            }
+
+        }
+        
+    }
+    //about-c
+    &-c {
+        .about-logos{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-gap: 2rem;
+
+            img {
+                width: 50px;
+                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                filter: grayscale(100%);
+            }
+        }
+
+    }
 }
 
 // footer
