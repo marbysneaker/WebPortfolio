@@ -357,6 +357,7 @@ input[class^=btn]:hover {
 
 .more-info {
   margin: 1.5em 5em;
+  text-align: center;
 }
 .more-info img {
   width: 100%;
@@ -388,15 +389,22 @@ input[class^=btn]:hover {
     text-align: right;
     width: 25em;
   }
+  .feature .content .title {
+    text-align: center;
+  }
+  .feature .content .desc {
+    text-align: center;
+  }
   .feature.left {
     grid-template-areas: "left right";
   }
-  .feature.left img {
+  .feature.left a {
     grid-area: left;
   }
   .feature.left .content {
     text-align: left;
     width: 25em;
+    justify-self: left;
   }
 }
 @media only screen and (min-width: 1200px) {

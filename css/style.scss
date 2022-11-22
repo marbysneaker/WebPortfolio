@@ -458,12 +458,12 @@ input[class^='btn']:hover {
 
 }
 
-// Contact page
+// work Page
 
 
 .more-info {
     margin: 1.5em 5em;
-    
+    text-align: center;
     img {
         width: 100%;
         object-fit: cover;
@@ -499,6 +499,12 @@ input[class^='btn']:hover {
         .content {
             text-align: right;
             width: 25em;
+            .title{
+                text-align: center;
+            }
+            .desc{
+                text-align: center;
+            }
         }
     }
 
@@ -507,14 +513,14 @@ input[class^='btn']:hover {
         grid-template-areas: 
             "left right";
         
-        img {
+        a {
             grid-area: left;
         }
 
         .content {
             text-align: left;
             width: 25em;
-            // justify-self: left;
+            justify-self: left;
         }
         
     }
