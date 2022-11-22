@@ -457,3 +457,76 @@ input[class^='btn']:hover {
     }
 
 }
+
+// Contact page
+
+
+.more-info {
+    margin: 1.5em 5em;
+    
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 11em;
+    }
+
+    .title {
+        
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+    .desc {
+        
+        line-height: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+
+    .feature {
+        margin: 0rem 15rem;
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-bottom: 8em;
+
+        img {
+            width: 30em;
+            height:15em;
+        }
+
+        .content {
+            text-align: right;
+            width: 25em;
+        }
+    }
+
+    .feature.left {
+
+        grid-template-areas: 
+            "left right";
+        
+        img {
+            grid-area: left;
+        }
+
+        .content {
+            text-align: left;
+            width: 25em;
+            // justify-self: left;
+        }
+        
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .feature {
+        gap: 0;
+    }
+}

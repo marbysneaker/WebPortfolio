@@ -353,4 +353,58 @@ input[class^=btn]:hover {
 }
 #main-footer .footer-content .social .fab:hover {
   background: #ffc8dd;
+}
+
+.more-info {
+  margin: 1.5em 5em;
+}
+.more-info img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 11em;
+}
+.more-info .title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.more-info .desc {
+  line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 920px) {
+  .feature {
+    margin: 0rem 15rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 8em;
+  }
+  .feature img {
+    width: 30em;
+    height: 15em;
+  }
+  .feature .content {
+    text-align: right;
+    width: 25em;
+  }
+  .feature.left {
+    grid-template-areas: "left right";
+  }
+  .feature.left img {
+    grid-area: left;
+  }
+  .feature.left .content {
+    text-align: left;
+    width: 25em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .feature {
+    gap: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
