@@ -444,4 +444,81 @@ input[class^=btn]:hover {
   .feature {
     gap: 0;
   }
+}
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+  }
+  #header-home .header-content {
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  #main-nav a {
+    font-size: 1.1rem;
+  }
+  #main-nav li {
+    padding: 1rem;
+  }
+  #header-home {
+    height: 10rem;
+    border-bottom: 3px solid #ffc8dd;
+    background-position: 20% 30%;
+  }
+  #header-home .header-content {
+    display: none;
+  }
+  #header-inner {
+    height: 10rem;
+  }
+  #home-a .specials, #home-b .stats, #home-c .process, .items, #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+  #home-a .specials #home-a .specials div, #home-b .stats #home-a .specials div, #home-c .process #home-a .specials div, .items #home-a .specials div, #contact-b .contact-info #home-a .specials div {
+    border-bottom: 1px #f4f4f4 solid;
+    padding-bottom: 1rem;
+  }
+  #home-a .specials #home-a .specials div:last-child, #home-b .stats #home-a .specials div:last-child, #home-c .process #home-a .specials div:last-child, .items #home-a .specials div:last-child, #contact-b .contact-info #home-a .specials div:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+  #home-a .specials #home-b .stats div, #home-b .stats #home-b .stats div, #home-c .process #home-b .stats div, .items #home-b .stats div, #contact-b .contact-info #home-b .stats div {
+    padding: 2rem 0 1rem 0;
+  }
+  #about-a .about-info {
+    grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3";
+  }
+  #about-c {
+    display: none;
+  }
+  #contact-a .text-fields {
+    grid-template-areas: "name" "subject" "email" "phone" "message";
+  }
+  #contact-b div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #00f5d4 solid;
+  }
+  #contact-b div:last-child {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  #main-footer {
+    height: 7rem;
+  }
+  #main-footer .footer-content {
+    flex-direction: column;
+    padding: 1rem;
+    height: 5rem;
+  }
+}
+@media (max-height: 580px) {
+  #head-home .header-content {
+    padding-top: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
