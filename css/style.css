@@ -404,9 +404,9 @@ input[class^=btn]:hover {
 
 @media only screen and (min-width: 920px) {
   .feature {
-    margin: 0rem 15rem;
+    margin: 5rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     gap: 1rem;
     margin-bottom: 8em;
   }
