@@ -427,6 +427,49 @@ input[class^='btn']:hover {
 
     }
 }
+// Contact Page
+#contact {
+    &-a {
+        .text-fields {
+            display: grid;
+            grid-template-areas: 
+            'name email'
+            'subject phone'
+            'message message';
+            grid-gap: 1.2rem;
+            margin-bottom: 1.2rem;
+
+            //grid areas
+            .name-input {
+                grid-area: name;
+            }
+            .subject-input {
+                grid-area: subject;
+            }
+            .email-input {
+                grid-area: email;
+            }
+            .phone-input {
+                grid-area: phone;
+            }
+            .message-input {
+                grid-area: message;
+                height: 100px;
+            }
+
+            .text-input {
+                padding: 0.5rem 1rem;
+
+            }
+            
+
+
+        }
+        button[type='submit'] {
+            width: 50%;
+        }
+    }
+}
 
 // footer
 #main-footer {
@@ -456,4 +499,83 @@ input[class^='btn']:hover {
         }
     }
 
+}
+
+// work Page
+
+
+.more-info {
+    margin: 1.5em 5em;
+    text-align: center;
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 11em;
+    }
+
+    .title {
+        
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+    .desc {
+        
+        line-height: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+
+    .feature {
+        margin: 0rem 15rem;
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-bottom: 8em;
+
+        img {
+            width: 30em;
+            height:15em;
+        }
+
+        .content {
+            text-align: right;
+            width: 25em;
+            .title{
+                text-align: center;
+            }
+            .desc{
+                text-align: center;
+            }
+        }
+    }
+
+    .feature.left {
+
+        grid-template-areas: 
+            "left right";
+        
+        a {
+            grid-area: left;
+        }
+
+        .content {
+            text-align: left;
+            width: 25em;
+            justify-self: left;
+        }
+        
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .feature {
+        gap: 0;
+    }
 }

@@ -331,6 +331,35 @@ input[class^=btn]:hover {
   filter: grayscale(100%);
 }
 
+#contact-a .text-fields {
+  display: grid;
+  grid-template-areas: "name email" "subject phone" "message message";
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+#contact-a .text-fields .name-input {
+  grid-area: name;
+}
+#contact-a .text-fields .subject-input {
+  grid-area: subject;
+}
+#contact-a .text-fields .email-input {
+  grid-area: email;
+}
+#contact-a .text-fields .phone-input {
+  grid-area: phone;
+}
+#contact-a .text-fields .message-input {
+  grid-area: message;
+  height: 100px;
+}
+#contact-a .text-fields .text-input {
+  padding: 0.5rem 1rem;
+}
+#contact-a button[type=submit] {
+  width: 50%;
+}
+
 #main-footer {
   background: #333;
   color: #fff;
@@ -353,4 +382,66 @@ input[class^=btn]:hover {
 }
 #main-footer .footer-content .social .fab:hover {
   background: #ffc8dd;
+}
+
+.more-info {
+  margin: 1.5em 5em;
+  text-align: center;
+}
+.more-info img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 11em;
+}
+.more-info .title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.more-info .desc {
+  line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 920px) {
+  .feature {
+    margin: 0rem 15rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 8em;
+  }
+  .feature img {
+    width: 30em;
+    height: 15em;
+  }
+  .feature .content {
+    text-align: right;
+    width: 25em;
+  }
+  .feature .content .title {
+    text-align: center;
+  }
+  .feature .content .desc {
+    text-align: center;
+  }
+  .feature.left {
+    grid-template-areas: "left right";
+  }
+  .feature.left a {
+    grid-area: left;
+  }
+  .feature.left .content {
+    text-align: left;
+    width: 25em;
+    justify-self: left;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .feature {
+    gap: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

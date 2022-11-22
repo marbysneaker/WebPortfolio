@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grid.css">
-    <title> About Me </title>
+    <title> Contact Me </title>
 </head>
 <body>
     <!-- Header -->
@@ -27,46 +27,58 @@
             <ul>
               <li><a href="index.html" >Home</a></li>
               <li><a href="about.html" >About</a></li>
-              <li><a href="work.html" class="current">Work</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="work.html" >Work</a></li>
+              <li><a href="contact.html" class="current">Contact</a></li>
             </ul>
           </nav>
           
         </div>
       </header>
-      <!-- Section A -->
-      <section id="work-a" class="text-center py-3">
+      <!-- Section A-->
+      <section id="contact-a" class="text-center py-3">
         <div class="container">
-            <h2 class="section-title">My Work</h2>
+            <h2 class="section-title"></h2>
             <div class="bottom-line"></div>
-            <p class="lead">Check out some of my projects</p>
-        </section>    
-           <section class="more-info py-3">
-                <div class="feature">
-                  <div class="content">
-                    <p class="title">TicTacToe</p>
-                    <p class="desc">Enjoy playing this tic tac toe game I built using HTML, CSS, and Javascript. </p>
-                  </div>
-                  <a href="https://marbysneaker.github.io/tictactoe/"><img src="img/items/tictactoeA.png"alt="Tictactoe"></a>
-                  
+            <p class="lead">Contact</p>
+            <form action="">
+                <div class="text-fields">
+                    <input type="text" class="text-input name-input" placeholder="Name">
+                    <input type="text" class="text-input subject-input" placeholder="Subject">
+                    <input type="email" class="text-input email-input" placeholder="Email">
+                    <input type="text" class="text-input phone-input" placeholder="Phone Number">
+                    <textarea class="text-input message-input" placeholder="Enter Message"></textarea>
                 </div>
-                <div class="feature left">
-                  <div class="content">
-                    <p class="title">Bart app</p>
-                    <p class="desc">Website has been taken down by Heroku, but you can still click on the picture to take you to the github and source code of the project.</p>
-                  </div>
-                  <a href="https://github.com/cdsterling/BartProj"><img src="img/items/item5.png" alt="Bart app"></a>
-                  
+                <button type="submit" class="btn-dark">Submit</button>
+            </form>
+        </div>
+      </section>
+      <!-- Section B-->
+      <section id="contact-b" class="py-3 bg-dark">
+        <div class="container">
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <h3>Email</h3>
+                    <p>marby.pangilinan@gmail.com</p>
+                    
                 </div>
-                <div class="feature">
-                  <div class="content">
-                    <p class="title">To-do-list</p>
-                    <p class="desc">Currently working on the website of this app. For the mean time you can checkout my source by clicking on the stock image</p>
-                  </div>
-                  <a href="https://github.com/marbysneaker/to-do-list"><img src="img/items/item3.png" alt="To-do-list"></a>
+                <div>
+                    <i class="fas fa-phone fa-2x"></i>
+                    <h3>Phone</h3>
+                    <p>510-690-4584</p>
+                    
                 </div>
-            
-            </section>
+                <div>
+                    <i class="fas fa-address-card fa-2x"></i>
+                    <h3>Address</h3>
+                    <p>California</p>
+                    
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Section C-->
+      
 
       <!-- Footer -->
       <footer id="main-footer">
