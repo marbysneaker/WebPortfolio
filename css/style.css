@@ -359,6 +359,9 @@ input[class^=btn]:hover {
 #contact-a button[type=submit] {
   width: 50%;
 }
+#contact-b {
+  text-align: center;
+}
 
 #main-footer {
   background: #333;
