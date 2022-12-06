@@ -93,6 +93,11 @@ img {
   border-bottom: 3px solid #ffc8dd;
 }
 
+#smaller-container {
+  height: 80px;
+  padding: auto;
+}
+
 #home-a .specials {
   margin-top: 3rem;
   display: grid;
@@ -131,36 +136,39 @@ img {
   text-align: center;
 }
 #home-c .process {
+  margin: auto;
+  width: 100%;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
 }
 #home-c .process-step {
   position: absolute;
   top: 0;
   right: 0;
-  font-size: 28px;
+  font-size: 2px;
   background: #f4f4f4;
   color: #000;
   border-radius: 50%;
-  height: 15px;
-  width: 15px;
+  height: 2px;
+  width: 2px;
   line-height: 15px;
-  padding: 1rem;
+  padding: auto;
   transition: all 1s;
+  display: none;
 }
 #home-c .process-icon {
   border-radius: 50%;
   background: #333;
   color: #fff;
-  padding: 2rem;
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
+  margin: auto;
+  width: 45px;
+  height: 45px;
+  line-height: 50px;
   text-align: center;
   position: relative;
   transition: all 1s;
+  margin: 0;
 }
 #home-c .process-icon:hover {
   background: #ffc8dd;
@@ -171,6 +179,10 @@ img {
 #home-c .process-icon:hover .process-step {
   background: #333;
   color: #fff;
+}
+
+.small-icon {
+  margin: 0 auto;
 }
 
 #technology {
@@ -407,9 +419,9 @@ input[class^=btn]:hover {
 
 @media only screen and (min-width: 920px) {
   .feature {
-    margin: 0rem 15rem;
+    margin: 5rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     gap: 1rem;
     margin-bottom: 8em;
   }
@@ -446,5 +458,82 @@ input[class^=btn]:hover {
   }
   .feature {
     gap: 0;
+  }
+}
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+  }
+  #header-home .header-content {
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  #main-nav a {
+    font-size: 1.1rem;
+  }
+  #main-nav li {
+    padding: 1rem;
+  }
+  #header-home {
+    height: 10rem;
+    border-bottom: 3px solid #ffc8dd;
+    background-position: 20% 30%;
+  }
+  #header-home .header-content {
+    display: none;
+  }
+  #header-inner {
+    height: 10rem;
+  }
+  #home-a .specials, #home-b .stats, #home-c .process, .items, #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+  #home-a .specials #home-a .specials div, #home-b .stats #home-a .specials div, #home-c .process #home-a .specials div, .items #home-a .specials div, #contact-b .contact-info #home-a .specials div {
+    border-bottom: 1px #f4f4f4 solid;
+    padding-bottom: 1rem;
+  }
+  #home-a .specials #home-a .specials div:last-child, #home-b .stats #home-a .specials div:last-child, #home-c .process #home-a .specials div:last-child, .items #home-a .specials div:last-child, #contact-b .contact-info #home-a .specials div:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+  #home-a .specials #home-b .stats div, #home-b .stats #home-b .stats div, #home-c .process #home-b .stats div, .items #home-b .stats div, #contact-b .contact-info #home-b .stats div {
+    padding: 2rem 0 1rem 0;
+  }
+  #about-a .about-info {
+    grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3";
+  }
+  #about-c {
+    display: none;
+  }
+  #contact-a .text-fields {
+    grid-template-areas: "name" "subject" "email" "phone" "message";
+  }
+  #contact-b div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #00f5d4 solid;
+  }
+  #contact-b div:last-child {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  #main-footer {
+    height: 7rem;
+  }
+  #main-footer .footer-content {
+    flex-direction: column;
+    padding: 1rem;
+    height: 5rem;
+  }
+}
+@media (max-height: 580px) {
+  #head-home .header-content {
+    padding-top: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
