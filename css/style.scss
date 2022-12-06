@@ -541,7 +541,7 @@ input[class^='btn']:hover {
 
 
 .more-info {
-    margin: 1.5em 5em;
+    padding: 3em 4em;
     text-align: center;
     img {
         width: 100%;
@@ -559,7 +559,27 @@ input[class^='btn']:hover {
         line-height: 1.5rem;
     }
 }
+.more-info {
 
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(0, 188, 212, 1) 0%, rgba(183, 58, 173, 1) 50%, rgba(103, 58, 183, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(0, 188, 212, 1) 0%, rgba(183, 58, 173, 1) 50%, rgba(103, 58, 183, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(0, 188, 212, 1) 0%, rgba(183, 58, 173, 1) 50%, rgba(103, 58, 183, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#673AB7', endColorstr='#00BCD4', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(0, 188, 212, 1) 0%, rgba(183, 58, 173, 1) 50%, rgba(103, 58, 183, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(0, 188, 212, 1) 0%, rgba(183, 58, 173, 1) 50%, rgba(103, 58, 183, 1) 100%);
+    background-clip: padding-box;
+}
 @media only screen and (min-width: 920px) {
 
     .feature {
